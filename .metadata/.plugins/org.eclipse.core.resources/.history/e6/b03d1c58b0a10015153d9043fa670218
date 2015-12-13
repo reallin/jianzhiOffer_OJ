@@ -1,0 +1,24 @@
+package Main;
+
+import java.util.ArrayList;
+import java.util.Stack;
+
+public class Main {
+	
+	    public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
+	    	Stack<ListNode> stack = new Stack<ListNode>();
+	    	ArrayList<Integer> aList = new ArrayList<Integer>();
+	    	ListNode curNode=listNode;
+	    	if(curNode == null){
+	    		return null;
+	    	}
+	        while(curNode != null){
+	        	stack.push(curNode);
+	        	curNode = curNode.nextNode;
+	        }
+	        for(int i = 0;i < stack.size();i++){
+	        	aList.add(stack.pop().value);
+	        }
+	        return aList;
+	    }
+}
