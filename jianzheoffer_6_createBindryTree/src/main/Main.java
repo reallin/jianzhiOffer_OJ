@@ -3,6 +3,7 @@ package main;
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历
  * 的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1
  * ,5,3,8,6}，则重建二叉树并返回。
+ * 思路：指出二叉树顶点，preorder第一个值就是，再找出左子树的值，右子树的值，返回根节点。
  * @author linxj
  *
  */
@@ -47,7 +48,7 @@ public static void main(String[] args){
 		}
 		node.left = reConstructBinaryTree(leftNew,leftIn);
 		}
-		if( pos<pre.length-1){//存在右子树
+		if(pos<pre.length-1){//存在右子树
         	int[] newLeftPre = new int[pre.length-1-pos];
         	int[] newLeftIn = new int[pre.length-1-pos];
         	
