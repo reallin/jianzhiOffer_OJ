@@ -1,11 +1,11 @@
 package Main;
 /**计算二进制中1的个数**/
 public class Main {
-	//private static final int _1MB = 1024*1024;
+	private static final int _1MB = 1024*1024;
 	public static void main(String args[]){
 		System.out.print(NumberOf1(7)+"");
 		//System.out.print(NumberOf1_2(7)+"");
-		//byte[] a = new byte[240*_1MB];
+		byte[] a = new byte[240*_1MB];
 	}
 	 public static int NumberOf1(int n) {
 		 int i = 1;
