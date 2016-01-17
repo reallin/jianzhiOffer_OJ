@@ -54,3 +54,12 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://do
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
 !SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2015-12-19 11:52:14.804
 !MESSAGE No repository found at http://download.macromedia.com/pub/labs/jseclipse/autoinstall.
+!SESSION 2016-01-04 22:49:57.724 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-01-04 22:50:02.290
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
